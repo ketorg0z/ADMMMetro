@@ -194,29 +194,29 @@ Prospekt mira 6	55
 Prospekt mira 5	56
 
 Enter 'from' station index and 'to' station index below:
-43 4
+56 3
 
 Deykstry
 
-From: Oktyabrskaya 5	To: Pushkinskaya
-11 mins
-Oktyabrskaya 5 0
-Park kultury 5 1
-Kievskaya 5 3
-Krasnopresnenskaya 6
-Barrikadnaya 9
-Pushkinskaya 11
+From: Prospekt mira 5	To: Tverskaya
+9 mins
+Prospekt mira 5 0
+Novoslobodskaya 2
+Belorusskaya 5 4
+Belorusskaya 2 7
+Mayakovskaya 8
+Tverskaya 9
 
 1-k BFS
 
-From: Oktyabrskaya 5	To: Pushkinskaya
-11 mins
-Oktyabrskaya 5 0
-Park kultury 5 1
-Kievskaya 5 3
-Krasnopresnenskaya 6
-Barrikadnaya 9
-Pushkinskaya 11
+From: Prospekt mira 5	To: Tverskaya
+9 mins
+Prospekt mira 5 0
+Novoslobodskaya 2
+Belorusskaya 5 4
+Belorusskaya 2 7
+Mayakovskaya 8
+Tverskaya 9
 
 ```
 
