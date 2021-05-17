@@ -48,7 +48,6 @@ std::map<int, std::vector<std::pair<int, int>>> metro = {
   <table>
   <tr>
   <td>
-  Список станций:  <br>
   Okhotniy ryad	0  <br>
   Teatralnaya	1  <br>
   Ploshyad revolutsii	2 <br> 
