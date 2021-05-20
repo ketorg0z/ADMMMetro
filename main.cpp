@@ -87,7 +87,7 @@ std::vector<int> routes(stations.size(), 1000);  //Массив кратчайш
 std::vector<int> visited(stations.size(), 0);         //Массив исследованных вершин, изначально заполнен нулями
 std::vector<int> routesVector(stations.size()); //Массив пройденных станций для восстановления пути
 
-void Deykstry(int from, const int& to) {
+void Dijkstra(int from, const int& to) {
   do {
     int min = 1000;
     int minst = 0;
@@ -189,11 +189,11 @@ int main() {
 
   //Алгоритм Дейкстры
 
-  std::cout << std::endl << "Deykstry" << std::endl << std::endl;
+  std::cout << std::endl << "Dijkstra" << std::endl << std::endl;
   {
     routes[from] = 0;  //Задаём минимальный вес (время) начальной вершине, так как у нас нет отрицательных весов, мы берём 0
 
-    Deykstry(from, to);  //Запускаем поиск кратчайших путей, внутри алгоритма самого позже впишу все пояснения тоже
+    Dijkstra(from, to);  //Запускаем поиск кратчайших путей, внутри алгоритма самого позже впишу все пояснения тоже
 
     //Вывод
     std::cout << "From: " << stations[from] << "\tTo: " << stations[to] << std::endl;
