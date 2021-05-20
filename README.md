@@ -117,7 +117,7 @@ std::map<int, std::vector<std::pair<int, int>>> metro = {
 ### Реализация Алгоритма Дейкстры
 
 ```c++
-void Deykstry(int from, const int& to) {
+void Dijkstra(int from, const int& to) {
   do {
     int min = 1000;
     int minst = 0;
@@ -266,7 +266,7 @@ Tverskaya 9
 
         routes[i] = 0;
         auto start = std::chrono::high_resolution_clock::now();
-        Deykstry(i, j);
+        Dijkstra(i, j);
         auto stop = std::chrono::high_resolution_clock::now();
 
         auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
@@ -280,7 +280,7 @@ Tverskaya 9
   }
 
   std::cout << std::endl << "Average wall time taken by 1-k BFS algrorithm:" << std::endl << durB/1000.0 << " microseconds" << std::endl;
-  std::cout << std::endl << "Average wall time taken Deykstra algrorithm:" << std::endl << durD/1000.0 << " microseconds" << std::endl;
+  std::cout << std::endl << "Average wall time taken Dijkstra algrorithm:" << std::endl << durD/1000.0 << " microseconds" << std::endl;
 
 ```
 
